@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading;
-using System.Diagnostics;
+﻿using System.Threading;
 
 namespace BotServer
 {

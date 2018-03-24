@@ -1,0 +1,12 @@
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\bin\Debug\JacktheRipperBot.exe.config
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\bin\Debug\JacktheRipperBot.exe
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\bin\Debug\JacktheRipperBot.pdb
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\bin\Debug\System.Web.dll
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.csprojResolveAssemblyReference.cache
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.MainForm.resources
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.Properties.Resources.resources
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.csproj.GenerateResource.cache
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.csproj.CoreCompileInputs.cache
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.csproj.CopyComplete
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.exe
+C:\Users\Rob\Documents\GitHub\JacktheRipperBot\Software\PC\JacktheRipperBot\obj\x86\Debug\JacktheRipperBot.pdb

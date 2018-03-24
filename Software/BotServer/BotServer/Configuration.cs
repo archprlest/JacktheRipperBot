@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml;
-using System.Xml.Linq;
 using System.IO;
 
 namespace BotServer
@@ -57,29 +53,30 @@ namespace BotServer
                 throw new Exception(String.Format("The file {0} cannot be found", FileName));
             }
 
+            var document = new XmlDocument();
             using (XmlReader Reader = new XmlTextReader(FileName))
             {
-                XElement Config = XElement.Load(Reader);
-
-                ToolheadGrab = (int)Config.Element("ToolheadGrab");
-                ToolheadRelease = (int)Config.Element("ToolheadRelease");
-                YAxisDown = (int)Config.Element("YAxisDown");
-                YAxisStop = (int)Config.Element("YAxisStop");
-                YAxisUp = (int)Config.Element("YAxisUp");
-                PivotInTray = (int)Config.Element("PivotInTray");
-                PivotDrive = (int)Config.Element("PivotDrive");
-                PivotOutTray = (int)Config.Element("PivotOutTray");
-                MaxToolheadMoveTime = (int)Config.Element("MaxToolheadMoveTime");
-                MaxPivotMoveTime = (int)Config.Element("MaxPivotMoveTime");
-                YAxisLowertoDriveTime = (int)Config.Element("YAxisLowertoDriveTime");
-                YAxisLowertoOutTrayDropTime = (int)Config.Element("YAxisLowertoOutTrayDropTime");
-                PivotSettleTime = (int)Config.Element("PivotSettleTime");
-                PivotSpeed = (int)Config.Element("PivotSpeed");
-                PivotAcceleration = (int)Config.Element("PivotAcceleration");
-                ToolheadSpeed = (int)Config.Element("ToolheadSpeed");
-                ToolheadAcceleration = (int)Config.Element("ToolheadAcceleration");
-                MaestroPort = Config.Element("MaestroPort").Value;
+                document.Load(Reader);
             }
+
+            ToolheadGrab = int.Parse(document.SelectSingleNode("//ToolheadGrab").InnerText);
+            ToolheadRelease = int.Parse(document.SelectSingleNode("//ToolheadRelease").InnerText);
+            YAxisDown = int.Parse(document.SelectSingleNode("//YAxisDown").InnerText);
+            YAxisStop = int.Parse(document.SelectSingleNode("//YAxisStop").InnerText);
+            YAxisUp = int.Parse(document.SelectSingleNode("//YAxisUp").InnerText);
+            PivotInTray = int.Parse(document.SelectSingleNode("//PivotInTray").InnerText);
+            PivotDrive = int.Parse(document.SelectSingleNode("//PivotDrive").InnerText);
+            PivotOutTray = int.Parse(document.SelectSingleNode("//PivotOutTray").InnerText);
+            MaxToolheadMoveTime = int.Parse(document.SelectSingleNode("//MaxToolheadMoveTime").InnerText);
+            MaxPivotMoveTime = int.Parse(document.SelectSingleNode("//MaxPivotMoveTime").InnerText);
+            YAxisLowertoDriveTime = int.Parse(document.SelectSingleNode("//YAxisLowertoDriveTime").InnerText);
+            YAxisLowertoOutTrayDropTime = int.Parse(document.SelectSingleNode("//YAxisLowertoOutTrayDropTime").InnerText);
+            PivotSettleTime = int.Parse(document.SelectSingleNode("//PivotSettleTime").InnerText);
+            PivotSpeed = int.Parse(document.SelectSingleNode("//PivotSpeed").InnerText);
+            PivotAcceleration = int.Parse(document.SelectSingleNode("//PivotAcceleration").InnerText);
+            ToolheadSpeed = int.Parse(document.SelectSingleNode("//ToolheadSpeed").InnerText);
+            ToolheadAcceleration = int.Parse(document.SelectSingleNode("//ToolheadAcceleration").InnerText);
+            MaestroPort = document.SelectSingleNode("//MaestroPort").InnerText;
         }
     }
 }
